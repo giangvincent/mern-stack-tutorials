@@ -1,0 +1,22 @@
+{
+  "name": "express-tutorials",
+  "version": "1.0.0",
+  "description": "Tutorials from book \"Pro MERN Stack\".\r I seperated into folder for Mongo, Express, React, Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giangvincent/mern-stack-tutorials.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giangvincent/mern-stack-tutorials/issues"
+  },
+  "homepage": "https://github.com/giangvincent/mern-stack-tutorials#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
