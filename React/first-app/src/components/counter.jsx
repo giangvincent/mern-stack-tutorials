@@ -4,10 +4,16 @@ import PropTypes from 'prop-types'
 class Counter extends Component {
     state = {
         count: 0,
-        tags: ['tag1', 'tag2', 'tag3']
+ 
     }
     handleIncrement = (step) => {
         this.setState({ count: this.state.count + step })
+    }
+
+    handleDecrement = (step) => {
+        var countNum = this.state.count - step;
+        countNum = countNum <= 0 ? 0 : countNum;
+        this.setState({ count: countNum })
     }
 
     render() { 
@@ -15,10 +21,8 @@ class Counter extends Component {
             <h1>Hello World</h1>
             <p>{this.formatCount()}</p>
             <button onClick={() => this.handleIncrement(1)}>Increment</button>
-            <button>Decrement</button>
-            <ul>
-                {this.state.tags.map(tag => <li key={tag}>{tag}</li>)}
-            </ul>
+            <button onClick={() => this.handleDecrement(1)}>Decrement</button>
+        
         </React.Fragment>);
     }
 
